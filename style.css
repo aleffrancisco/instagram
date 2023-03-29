@@ -10,22 +10,16 @@
 
 body {
   width: 100vw;
-  height: 99vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   background-color: rgb(243, 243, 243);
 }
-footer {
-  width: 100vw;
-  height: 1vh;
-  padding: 0 0 10px 0;
-  display: flex;
-  text-align: center;
-}
 
 .main {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 95%;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -36,23 +30,58 @@ footer {
   display: none;
 }
 
-/*
-Login
-*/
-
 .login {
-  width: 100vw;
-  padding: 0 20%;
-  min-height: 40rem;
-  display: none; /* Visualizar o item */
+  width: 100%;
+  height: 100%;
+  display: flex; /* Visualizar o item */
   align-items: center; /* horizontal */
-  justify-content: space-between; /* vertical */
+  justify-content: center; /* vertical */
   flex-direction: column;
 }
 
-.continue,
+.insta-name {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.instagram-logo {
+  height: 2.5rem;
+}
+
+.content-change {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-top: none;
+}
+
+.continue {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: none;
+}
+
+.continue-content {
+  width: 100%;
+}
+
 .altern {
-  width: 70%;
+  width: 100%;
   height: min-content;
   display: flex;
   padding: 1rem 0;
@@ -60,22 +89,19 @@ Login
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff;
-}
-
-.instagram-logo {
-  height: 2.5rem;
-  margin: 5px;
 }
 
 .profile-photo {
   width: 100%;
   height: auto;
-  margin: 5px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding-bottom: 10px;
   overflow: hidden;
+  border: 1px solid lightgray;
+  border-top: none;
+  margin-bottom: 10px;
 }
 
 .profile-photo img {
@@ -84,8 +110,15 @@ Login
   border-radius: 100%;
 }
 
+.lin-or-lout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .instagram-login {
-  margin: 5px 0;
+  margin: 10px 0;
   background-color: #0095f6;
   color: #ffffff;
   padding: 8px;
@@ -106,7 +139,7 @@ Login
 }
 
 .download {
-  width: 70%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -130,15 +163,17 @@ Login
   height: 50%;
   margin: 5px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
 .app-download {
+  width: 9rem;
   height: 3em;
-  width: 9.2rem;
+  margin: 0 5px;
   background-size: cover;
+  border-radius: 10px;
 }
 
 .app-download:nth-child(1) {
@@ -157,7 +192,7 @@ Other
   width: 100vw;
   padding: 0 20%;
   height: 50vh;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -211,9 +246,6 @@ input {
   padding: 1px 5px;
 }
 
-.btn {
-}
-
 .btn-lg {
   margin: 5px 0;
   background-color: #0095f6;
@@ -233,11 +265,28 @@ input {
   font-size: 16px;
 }
 
-/* media queries */
+footer {
+  width: 99vw;
+  height: 5%;
+  padding: 0 0 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
+/* media queries */
 @media screen and (min-width: 769px) {
+  .main {
+    padding: 10px 10%;
+  }
+  .login {
+    width: 50%;
+    max-width: 30rem;
+  }
+
   .phone {
-    width: 50vw;
+    width: 50%;
     height: auto;
     display: flex;
     align-items: center;
@@ -248,10 +297,15 @@ input {
     height: 50rem;
   }
 
+  /*
   .login {
     width: 50vw;
     padding: 0;
     min-height: 40rem;
+  }
+
+  .content-change {
+    width: 70%;
   }
 
   .other {
@@ -266,22 +320,17 @@ input {
 
   form {
   }
+  */
 }
 
 @media screen and (max-width: 768px) {
-  .continue,
-  .altern,
-  .download {
-    width: 100%;
+  .login {
+    width: 65%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .login {
-    padding: 0 10%;
-  }
-
-  .other {
-    padding: 0 10%;
+    width: 100%;
   }
 }
