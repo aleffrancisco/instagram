@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device=width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Instagram</title>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="main">
@@ -22,9 +23,9 @@
 
         <div class="content-change">
           <div class="continue">
-            <div class="continue-content">
+            <div class="continue-content" id="img">
               <div class="profile-photo">
-                <img src="./img/perfil-instagram.jpg" alt="foto de perfil" />
+                <img src="./img/perfil-instagram.jpg" alt="foto de perfil" 0 />
                 <a href="#" class="instagram-login">Continue como alefsilva</a>
                 <a href="#" class="instagram-logout">Remover conta</a>
               </div>
@@ -32,14 +33,16 @@
               <div class="altern">
                 <p class="not-account">Não é alefsilva?</p>
                 <p class="not-account">
-                  <spam class="link-blue">Alternar contas</spam>
+                  <button class="link-blue" id="boton" onclick="mostrar();">
+                    Alternar contas
+                  </button>
                   ou
-                  <spam class="link-blue">Inscreva-se</spam>
+                  <button class="link-blue">Inscreva-se</button>
                 </p>
               </div>
             </div>
 
-            <div class="other">
+            <div class="other" id="other">
               <div class="other-main">
                 <div class="form">
                   <form action="">
