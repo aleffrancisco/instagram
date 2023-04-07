@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Instagram</title>
     <script src="js/scripts.js"></script>
@@ -13,21 +13,19 @@
         <img src="./img/instagram-celular.png" alt="celular" />
       </div>
       <div class="login">
-        <div class="insta-name">
-          <img
-            src="./img/instagram-logo.png"
-            class="instagram-logo"
-            alt="logo"
-          />
+        <div class="insta-logo">
+          <img src="./img/instagram-logo.png" class="logo" alt="logo" />
         </div>
 
-        <div class="content-change">
+        <div class="container">
           <div class="continue">
-            <div class="continue-content" id="img">
+            <div class="continue-main" id="img">
               <div class="profile-photo">
-                <img src="./img/perfil-instagram.jpg" alt="foto de perfil" 0 />
-                <a href="#" class="instagram-login">Continue como alefsilva</a>
-                <a href="#" class="instagram-logout">Remover conta</a>
+                <img src="./img/perfil-instagram.jpg" alt="foto de perfil" />
+                <button class="insta-login">Continue como alefsilva</button>
+                <button class="insta-logout" onclick="mostrar();">
+                  Remover conta
+                </button>
               </div>
 
               <div class="altern">
@@ -48,18 +46,23 @@
                   <form action="">
                     <input
                       type="text"
-                      name=""
-                      id=""
+                      name="user"
                       placeholder="Usuário, e-mail ou telefone"
                     />
-                    <input type="password" name="" id="" placeholder="Senha" />
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Senha"
+                    />
                     <button class="password">Esqueceu a senha?</button>
                   </form>
                 </div>
                 <div class="btn">
                   <button class="btn-lg">Entrar</button>
                   <p>ou</p>
-                  <button class="btn-fb">Entre com o Facebook</button>
+                  <a href="https://wwww.facebook.com" class="btn-fb"
+                    >Entrar com o Facebook</a
+                  >
                 </div>
               </div>
             </div>
@@ -68,7 +71,7 @@
 
         <div class="download">
           <div class="download-title">
-            <p>Baixe o aplicativo</p>
+            <p>Obtenha o aplicativo</p>
           </div>
           <div class="download-apps">
             <a
